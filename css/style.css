@@ -1,0 +1,9 @@
+.mode{
+    color: white;
+    background-color: #333;
+
+    .item{
+        background: white;
+        color: #333;
+    }
+}

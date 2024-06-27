@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Countries</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+        
+      </style>
+</head>
+<body>
+    <header class="border-b-[2px] py-3 " >
+        <div class="container w-[1280px] mx-auto">
+            <div class="flex justify-between items-center">
+                <h2 class="text-[20px] font-bold font-sans">Where in the world?</h2>
+                <div class="flex gap-[5px]">
+                    <button  class="flex items-center  p-[10px] rounded-[50%] border-[2px]">
+                        <span id="like-count">0</span>
+                        <img src="./img/like.svg" alt="like" width="30" height="30">
+                    </button>
+                    <button class="flex items-center  p-[10px] rounded-[50%] border-[2px]">
+                      <span id="basket-count">0</span>
+                        <img class="img" src="./img/basket.svg" alt="like" width="33" height="35">
+                    </button>
+                    <button class="mode-btn flex items-center gap-[3px]  p-[10px] rounded-[13px] border-[2px]">
+                        <img class="img1" src="./img/mion.svg" alt="like" width="30" height="30">
+                        <p>Dark mode</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class=" py-[8px]">
+            <div class="container w-[1280px] mx-auto">
+                <div class="flex justify-between items-center">
+                  <h2 class="text-[30px]">Countries</h2>
+                  <div>
+                    <input clas type="text" placeholder="Searching..." class=" input w-[150px] border-[2px] p-[8px] rounded-[8px]">
+                    <select name="" id="" class="select w-[150px] border-[2px] p-[8px] rounded-[8px]">
+                      <option  >All</option>
+                    </select>
+                  </div>
+                </div>
+                <ul class="list flex flex-wrap justify-between gap-[10px] py-[8px]">
+
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="./js/countries.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+</body>
+</html>
